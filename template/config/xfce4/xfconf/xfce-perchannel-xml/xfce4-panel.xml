@@ -25,7 +25,6 @@
       <property name="flat-buttons" type="bool" value="false"/>
       <property name="show-handle" type="bool" value="true"/>
     </property>
-    <property name="plugin-4" type="string" value="pager"/>
     <property name="plugin-5" type="string" value="clock">
       <property name="digital-format" type="string" value="%r"/>
       <property name="mode" type="uint" value="2"/>
