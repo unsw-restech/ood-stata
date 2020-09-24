@@ -1,0 +1,15 @@
+<%-
+
+  ncpus = num_cores.blank? ? 1 : num_cores.to_i
+  mem = ncpus * 4
+
+-%>
+---
+batch_connect:
+  template: vnc
+script:
+  native:
+  native:
+    - "-l"  
+    - "select=1:ncpus=<%= ncpus %>:mem=<%= mem %>gb"
+  email: "<%= ENV['USER'] %>@unsw.edu.au"

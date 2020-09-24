@@ -1,0 +1,27 @@
+---
+cluster: "katana"
+form:
+  - version
+  - bc_num_hours
+  - num_cores
+  - bc_vnc_resolution
+  - bc_email_on_started
+attributes:
+  num_cores:
+    widget: "number_field"
+    label: "Number of cores"
+    value: 1
+    help: |
+      Number of cores, 4GB per core.
+    min: 0
+    max: 48
+    step: 1
+    id: 'num_cores'
+  bc_vnc_resolution:
+    required: true
+  version:
+    widget: select
+    label: "Stata version"
+    help: "This defines the version of Stata you want to load."
+    options:
+     - [ "12", "stata/12" ]
