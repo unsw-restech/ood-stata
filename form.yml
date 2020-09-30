@@ -7,6 +7,9 @@ form:
   - bc_vnc_resolution
   - bc_email_on_started
 attributes:
+  bc_num_hours:
+    help: |
+      <a href="https://unsw-restech.github.io/using_katana/running_jobs.html#tips-for-using-pbs-and-katana-effectively">Tips for using Katana effectively</a>
   num_cores:
     widget: "number_field"
     label: "Number of cores"
